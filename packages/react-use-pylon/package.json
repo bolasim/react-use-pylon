@@ -1,5 +1,5 @@
 {
-  "name": "react-use-pylon",
+  "name": "@bolasim/react-use-pylon",
   "author": "bolasim",
   "module": "dist/index.mjs",
   "description": "React Pylon integration without the hassle, driven by hooks.",
@@ -63,7 +63,7 @@
     }
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.8",
