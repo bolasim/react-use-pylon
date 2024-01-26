@@ -5,21 +5,16 @@
           "pnpm": "^8.0.0"
       },
     "scripts": {
-      "dev": "turbo run dev --parallel --filter=playground --filter=react-use-pylon",
+      "dev": "turbo run dev --parallel --filter=react-use-pylon",
       "dev:examples": "turbo run dev --parallel --filter=*-example --filter=react-use-pylon",
       "test": "turbo run test",
       "build": "turbo run build",
-      "build:playground": "turbo run build --filter=playground",
       "lint": "turbo run lint",
       "lint:fix": "turbo run lint:fix",
       "clean": "turbo run clean && rm -rf node_modules",
-      "e2e": "turbo run e2e --filter=playground",
-      "e2e:open": "turbo run e2e:open --filter=playground",
-      "changeset": "changeset",
-      "release": "turbo run build --filter=react-use-pylon && changeset publish"
+      "release": "turbo run build --filter=react-use-pylon"
     },
     "devDependencies": {
-      "@changesets/cli": "^2.26.0",
       "@typescript-eslint/eslint-plugin": "^5.50.0",
       "eslint": "^8.33.0",
       "eslint-config-prettier": "^8.6.0",
