@@ -8,7 +8,7 @@ import { isSSR } from './utils';
  * @param method method passed to the `window.Pylon` instance
  * @param args arguments passed to the `window.Pylon` instance
  *
- * @see {@link https://developers.intercom.com/installing-intercom/docs/intercom-javascript}
+ * @see {@link https://docs.usepylon.com/chat/api}
  */
 const PylonAPI = (method: PylonMethod, ...args: Array<any>) => {
   logger.log('info', `${method} on Pylon instance`);

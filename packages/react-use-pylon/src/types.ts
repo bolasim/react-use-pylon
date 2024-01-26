@@ -52,10 +52,10 @@ export type PylonContextValues = {
 };
 
 export type PylonProviderProps = {
-  /** The app ID of your Intercom app which will indicate where to store any data  */
+  /** The app ID of your Pylon app which will indicate where to store any data  */
   chatSettings: PylonChatSettings;
   /**
-   * Indicates if Intercom should be automatically booted
+   * Indicates if Pylon should be automatically booted
    *
    * @remarks if `true`, 'boot' does not need to be called manually
    * */
@@ -77,14 +77,14 @@ export type PylonProviderProps = {
   onUnreadCountChange?: (unreadCount: number) => void;
 
   /**
-   * Indicates if Intercom should be initialized. This will ping to the Intercom servers.
+   * Indicates if Pylon should be initialized. This will ping to the Pylon servers.
    *
    * @remarks can be used for multistaged environments
    */
   shouldInitialize?: boolean;
 
   /**
-   * Indicates if the intercom initialization should be delayed, delay is in ms
+   * Indicates if the Pylon initialization should be delayed, delay is in ms
    *
    * @remarks If not set delay is set to 0ms
    * */

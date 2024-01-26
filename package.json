@@ -1,27 +1,29 @@
 {
-    "private": true,
-    "packageManager": "pnpm@8.6.5",
-    "engines": {
-          "pnpm": "^8.0.0"
-      },
-    "scripts": {
-      "dev": "turbo run dev --parallel --filter=react-use-pylon",
-      "dev:examples": "turbo run dev --parallel --filter=*-example --filter=react-use-pylon",
-      "test": "turbo run test",
-      "build": "turbo run build",
-      "lint": "turbo run lint",
-      "lint:fix": "turbo run lint:fix",
-      "clean": "turbo run clean && rm -rf node_modules",
-      "release": "turbo run build --filter=react-use-pylon"
-    },
-    "devDependencies": {
-      "@typescript-eslint/eslint-plugin": "^5.50.0",
-      "eslint": "^8.33.0",
-      "eslint-config-prettier": "^8.6.0",
-      "eslint-config-react-app": "^7.0.1",
-      "eslint-plugin-prettier": "^4.2.1",
-      "eslint-plugin-simple-import-sort": "^10.0.0",
-      "prettier": "^2.8.3",
-      "turbo": "^1.9.8"
-    }
+  "private": true,
+  "packageManager": "pnpm@8.6.5",
+  "engines": {
+    "pnpm": "^8.0.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev --parallel --filter=react-use-pylon",
+    "dev:examples": "turbo run dev --parallel --filter=*-example --filter=react-use-pylon",
+    "test": "turbo run test",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "changeset": "changeset",
+    "release": "turbo run build --filter=react-use-pylon && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^2.8.8",
+    "turbo": "^1.11.3"
   }
+}

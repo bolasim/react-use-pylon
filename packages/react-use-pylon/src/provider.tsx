@@ -30,7 +30,7 @@ export const PylonProvider: React.FC<
   const isBooted = React.useRef(false);
   const isInitialized = React.useRef(false);
 
-  // Allow data-x attributes, see https://github.com/devrnt/react-use-intercom/issues/478
+  // Allow data-x attributes
   const invalidPropKeys = Object.keys(rest).filter(
     (key) => !key.startsWith('data-'),
   );
