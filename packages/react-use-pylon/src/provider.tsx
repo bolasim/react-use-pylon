@@ -76,19 +76,13 @@ export const PylonProvider: React.FC<
     setIsOpen(true);
     if (onShow) onShow();
   }, [onShow, setIsOpen]);
-  // console.log(isSSR);
-  // console.log(shouldInitialize);
-  // console.log(isInitialized.current);
   if (!isSSR && shouldInitialize && !isInitialized.current) {
     initialize(chatSettings.appId, initializeDelay);
-    console.log('before if');
-    console.log(autoBoot);
     if (onUnreadCountChange) {
       PylonAPI('onChangeUnreadMessagesCount', onUnreadCountChange);
     }
 
     if (autoBoot) {
-      console.log('autoboot');
       boot(chatSettings);
     }
 

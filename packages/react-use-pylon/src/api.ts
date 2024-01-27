@@ -11,8 +11,7 @@ import { isSSR } from './utils';
  * @see {@link https://docs.usepylon.com/chat/api}
  */
 const PylonAPI = (method: PylonMethod, ...args: Array<any>) => {
-  logger.log('info', `${method} on Pylon instance`);
-  console.log(`${method} on Pylon instance`);
+  logger.log('debug', `${method} on Pylon instance`);
   if (!isSSR && window.Pylon) {
     return window.Pylon.apply(null, [method, ...args]);
   } else {

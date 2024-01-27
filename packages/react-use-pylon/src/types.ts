@@ -28,7 +28,7 @@ export type PylonProps = PylonChatSettings;
 // TODO: decide whether or not to keep this
 export type PylonMethod = 'hide' | 'show' | 'onChangeUnreadMessagesCount';
 
-export type LogLevel = 'info' | 'error' | 'warn';
+export type LogLevel = 'info' | 'error' | 'warn' | 'debug';
 
 export type PylonContextValues = {
   /**

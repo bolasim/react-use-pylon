@@ -11,8 +11,6 @@ function MyApp({ Component, pageProps }) {
       shouldInitialize={true}
       chatSettings={{
         appId: PYLON_APP_ID,
-        email: 'malek.bola@gmail.com',
-        name: 'Bola Malek',
       }}
     >
       <Component {...pageProps} />

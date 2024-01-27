@@ -4,7 +4,7 @@
   "module": "dist/index.mjs",
   "description": "React Pylon integration without the hassle, driven by hooks.",
   "homepage": "https://github.com/bolasim/react-use-pylon#readme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

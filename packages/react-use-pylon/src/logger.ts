@@ -8,18 +8,21 @@ import { LogLevel } from './types';
  */
 export const log = (level: LogLevel, message: string) => {
   const packageName = '[react-use-pylon]';
-
+  const logMsg = `${packageName} ${message}`;
   switch (level) {
     case 'info':
-      console.log(`${packageName} ${message}`);
+      console.log(logMsg);
+      break
+    case 'debug':
+      console.debug(logMsg);
       break;
     case 'warn':
-      console.warn(`${packageName} ${message}`);
+      console.warn(logMsg);
       break;
     case 'error':
-      console.error(`${packageName} ${message}`);
+      console.error(logMsg);
       break;
     default:
-      console.log(`${packageName} ${message}`);
+      console.log(logMsg);
   }
 };
